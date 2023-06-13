@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+     var nombre = prompt("Dime tu nombre","Escribe aqui");
+     while(!isNaN(nombre)){
+        nombre = prompt("Dime tu nombre","Escribe aqui");
+     }
+     
+     var edad = prompt("Dime tu edad","Escribe aqui");
+     while(isNaN(edad)||edad<=0 || edad>=105){
+        edad=prompt("Dime tu edad","Escribe aqui");
+     }
+     var apellidos = prompt("Dime tus apellidos","Escribe aqui");
+     while(!isNaN(apellidos)){
+        apellidos=prompt("Dime tus apellidos","Escribe aqui");
+     }
+    </script>
+
+</head>
+<body>
+    <script>
+        document.write("<h1>"+nombre+"</h1>");
+        document.write("<h1>"+edad+" "+"años"+"</h1>");
+        document.write("<h1>"+apellidos+"</h1>");
+    </script>
+    
+</body>
+</html>

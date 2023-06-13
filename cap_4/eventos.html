@@ -1,0 +1,39 @@
+<!--
+    EVENTOS:
+    ->Son desencadenantes de la acción, Permiten interactuar con la página web. (Pular ratón, pasar ratón por encima de imagen)
+    Video 24 PildorasInformáticas
+    Eventos más importantes:
+    onblur
+    onchange
+    onclick -> Pinchar y soltar el ratón -> Está definido para todos los elementos.
+    onfocus -> Se selecciona un elemento -> button/input/label/select/textarea/body
+    onmouserover-> El ratón pasa por encima de una imagen -> Todos los elementos
+    .
+    .
+    .
+    .
+    ->Tres niveles marcados por W3C:
+        -DOM Nivel 1
+        -DOM Nivel 2
+        -DOM Nivel 3
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function aviso(){
+
+            alert("DragonBall!");
+        }
+    </script>
+</head>
+<body>
+    <!--Desaconsejado, el evento habría que escribirlo en otra zona del programa-->
+    <img src="/cap_4/img/dragonBall.jpeg" width="420" height="286" onmouseover="aviso()">
+
+
+    
+</body>
+</html>

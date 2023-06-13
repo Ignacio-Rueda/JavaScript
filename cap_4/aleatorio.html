@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        var aleatorio = Math.round(Math.random()*100);
+        var miNum,intentos;
+        miNum=0;
+        intentos=0;
+        do{
+            miNum = prompt("Introduce un nº entre 0 y 100");
+            if (aleatorio>miNum){
+                document.write("Más alto"+"<br/>");
+            }
+            if(aleatorio<miNum){
+                docuement.write("Más bajo "+"<br/>");
+            }
+            intentos++;
+
+        }while(aleatorio!=miNum);
+
+        document.write("Correcto! Has necesitado "+intentos+" intentos ");
+
+    </script>
+    
+</body>
+</html>
