@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hola Alumnos</title>
+<link href="css/micss.css" rel="stylesheet">
+<script src="Jquery/jquery-1.6.3.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+        $("#anuncio").width(500)
+        .height(500).text("Vende!")
+        .hide().fadeIn(10000);//Funciones encadenadas
+    });
+</script>
+<script>
+//Para no tener que llevarnos este codigo después de la imagen, tenemos que crear este código
+    $(document).ready(function(){
+        $("#carrete img").hide();
+
+
+
+    })
+
+</script>
+<style>
+    #anuncio{
+        background-color: #000;
+        color:#FFF;
+        font-size: 24px;
+    }
+</style>
+</head>
+
+<body>
+<div id="carrete">
+    <img src="imgs/arbol.jpg" width="250" height="175">
+    <img src="imgs/descarga (1).jpeg" width="250" height="175">
+    <img src="imgs/descarga (2).jpeg" width="250" height="175">
+    <img src="imgs/descarga.jpeg" width="250" height="175">
+</div>
+<div id="anuncio">
+!COMPRA!
+</div>
+<!--<script>
+
+    var anuncio=document.getElementById("anuncio");//Permite almacenar solo un elemento en una variable
+    anuncio.style.width="500px";
+    anuncio.style.height="500px";
+    anuncio.innerHTML="!Vende!";
+</script>-->
+
+<!--<script>
+    OCULTAMOS IMÁGENES CON JAVASCRIPT
+    var imagenes = document.querySelectorAll("#carrete img");//Permite alamcenar varios elementos en una variable, crea un array
+    for(var i=0;i<imagenes.length;i++){
+        imagenes[i].style.visibility="hidden";
+    }
+</script>-->
+
+</body>
+</html>
