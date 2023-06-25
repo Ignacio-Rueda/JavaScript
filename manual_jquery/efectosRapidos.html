@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        //Recuerda: preventDefault()-> lo utilizamos para detener la acción predeterminada del evento, en este caso sería seguir el enlace
+        $(document).ready(function(evento){
+            $("#ocultar").click(function(evento){
+                evento.preventDefault();
+                $("#capaefectos").hide("slow");
+            })
+            $("#mostrar").click(function(evento){
+                evento.preventDefault();
+                $("#capaefectos").show(3000);
+            })
+
+
+
+
+        })
+
+    </script>
+</head>
+<body>
+    <div id="capaefectos" style="background-color:#cc7700;color:fff;padding:10px;">Esto es una capa que nos servirá para hacer efectos!</div>
+    <p>
+        <a href="#" id ="ocultar">Ocultar la capa</a>
+        <br>
+        <a href="#" id="mostrar">Mostar la capa</a>
+    </p>    
+</body>
+</html>
