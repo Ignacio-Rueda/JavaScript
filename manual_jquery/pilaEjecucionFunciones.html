@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        /*$(document).ready(function(event){
+            $("#capa").fadeOut(2000);//Ocultar
+            $("#capa").css({top:300,left:200});//alteramo la posición
+            $("#capa").fadein(2000);//Mostrar
+            //Si lo realizamos de este modo, es como si se ejecutasen todas a la vez
+            //NO ESTAMOS ESPERANDO A QUE TERMINE EL EFECTO ANTES DE QUE EMPIECE LA SIGUIENTE
+        })*/
+        //REALIZAR PILA DE EJECUCIONES
+        $(document).ready(function(event){
+            $("#capa").fadeOut(1000,function(){
+                $("#capa").css({'top':900,'left':600,'font-size':65});//alteramo la posición
+                $("#capa").fadeIn(1000);//Mostrar
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+    <div id="capa" style="background-color: red;">
+        Esta capa es independiente y voy a añadir y eliminar clases css sobre ella
+    </div>
+ 
+</body>
+</html>

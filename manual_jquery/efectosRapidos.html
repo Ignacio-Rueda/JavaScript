@@ -8,13 +8,14 @@
     <title>Document</title>
     <script>
         //Recuerda: preventDefault()-> lo utilizamos para detener la acción predeterminada del evento, en este caso sería seguir el enlace
-        $(document).ready(function(evento){
-            $("#ocultar").click(function(evento){
-                evento.preventDefault();
+        $(document).ready(function(event){
+            $("#ocultar").click(function(event){
+                event.preventDefault();
                 $("#capaefectos").hide("slow");
             })
-            $("#mostrar").click(function(evento){
-                evento.preventDefault();
+
+            $("#mostrar").click(function(event){
+                event.preventDefault();
                 $("#capaefectos").show(3000);
             })
 
@@ -22,7 +23,6 @@
 
 
         })
-
     </script>
 </head>
 <body>
