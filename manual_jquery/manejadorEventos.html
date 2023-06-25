@@ -12,20 +12,12 @@
         //Primera línea: haremos las cosas cuando la página esté lista
         //Segunda línea: Seleccionamos todas las etiquetas a y definimos un evento sobre estos elementos
         //Tercera línea: Mostramos mensaje
-        //Comportamiento: Al hacer click, nos muestra el mensaje y después nos redirige a la página
-        //La función recibe un evento, este evento tiene propiedades y métodos, entre ellos encontramos
-        //preventDefault()->Bloquea el comportamiento normal de un enlace
-       $(document).ready(function(){
-        $("a").click(function(evento){
-            alert("Has pulsado el enlace...Ahora serás enviado a la página....");
-            evento.preventDefault();
-        
+        $(document).ready(function(){
+            $("a").click(function(evento){
+                alert("Has pulsado sobre el enlace!....");
+                evento.preventDefault();
+            })
         })
-
-
-
-       })
-
 
 
     </script>
